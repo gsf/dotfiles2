@@ -1,4 +1,10 @@
-syntax on
+call plug#begin('~/.config/nvim/plugged')
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive'
+
+call plug#end()
 
 set expandtab
 set hidden
